@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World News - News Magazine</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="normalize.css">
+    
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        .article img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+        .article img:hover {
+            transform: scale(1.05);
+        }
+        figure {
+            text-align: center;
+        }
+        .sidebar h4 {
+            margin-bottom: 1rem;
+            color: #007bff; /* Blue color for world news theme */
+        }
+        .trending-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            transition: background-color 0.3s;
+        }
+        .trending-item:hover {
+            background-color: #e9ecef;
+            border-radius: 8px;
+            padding: 5px;
+        }
+        .trending-item img {
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+        .latest-articles {
+            margin-top: 2rem;
+        }
+        .latest-articles h4 {
+            margin-bottom: 1rem;
+            color: #007bff; /* Blue color for world news theme */
+        }
+        .latest-article {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            transition: transform 0.3s;
+        }
+        .latest-article:hover {
+            transform: translateY(-2px);
+        }
+        .latest-article img {
+            max-width: 100px;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header and Navigation (Assuming it's included from the home page) -->
+
+    <div class="container my-4">
+        <div class="row">
+            <!-- Sidebar (left) -->
+            <div class="col-md-4 sidebar">
+                <h4>Trending World News:</h4>
+                <ul class="list-unstyled">
+                    <li class="trending-item">
+                        <img src="image/climate.jpg" alt="News 1">
+                        <a href="#">Global Climate Summit Highlights</a>
+                    </li>
+                    <li class="trending-item">
+                        <img src="image/election.jpg" alt="News 2">
+                        <a href="#">Election Results Around the World</a>
+                    </li>
+                    <li class="trending-item">
+                        <img src="image/asia (1).jpg" alt="News 3">
+                        <a href="#">Major Economic Changes in Asia</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Article Section -->
+            <div class="col-md-8 article">
+                <h3>World News Trends 2024</h3>
+                <figure>
+                    <img src="image/wldtre.jpg" alt="World News Event">
+                    <figcaption>Key Events Shaping Our Global Landscape</figcaption>
+                </figure>
+                <p>In 2024, the world faces unprecedented challenges and opportunities, from climate change initiatives to geopolitical tensions...</p>
+            </div>
+        </div>
+
+        <!-- Latest Articles Section -->
+        <div class="latest-articles">
+            <h4>Latest Articles</h4>
+            <div class="latest-article">
+                <img src="image/impact (2).jpg" alt="Article 1">
+                <div>
+                    <h5><a href="#">The Impact of Renewable Energy Initiatives</a></h5>
+                    <p>Exploring how countries are shifting towards sustainable energy sources...</p>
+                </div>
+            </div>
+            <div class="latest-article">
+                <img src="image/globaleco.jpg" alt="Article 2">
+                <div>
+                    <h5><a href="#">Understanding Global Economic Trends</a></h5>
+                    <p>An analysis of the economic shifts happening in various regions...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer (Same as Home Page) -->
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

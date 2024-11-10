@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports - News Magazine</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="normalize.css">
+    
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        .article img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+        .article img:hover {
+            transform: scale(1.05);
+        }
+        figure {
+            text-align: center;
+        }
+        .sidebar h4 {
+            margin-bottom: 1rem;
+            color: #007bff; /* Changed to blue for sports theme */
+        }
+        .trending-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            transition: background-color 0.3s;
+        }
+        .trending-item:hover {
+            background-color: #e9ecef;
+            border-radius: 8px;
+            padding: 5px;
+        }
+        .trending-item img {
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+        .latest-articles {
+            margin-top: 2rem;
+        }
+        .latest-articles h4 {
+            margin-bottom: 1rem;
+            color: #007bff; /* Changed to blue for sports theme */
+        }
+        .latest-article {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            transition: transform 0.3s;
+        }
+        .latest-article:hover {
+            transform: translateY(-2px);
+        }
+        .latest-article img {
+            max-width: 100px;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header and Navigation (Assuming it's included from the home page) -->
+
+    <div class="container my-4">
+        <div class="row">
+            <!-- Sidebar (left) -->
+            <div class="col-md-4 sidebar">
+                <h4>Trending Sports:</h4>
+                <ul class="list-unstyled">
+                    <li class="trending-item">
+                        <img src="image/scooer.jpg" alt="circket">
+                        <a href="#">World Cup Highlights</a>
+                    </li>
+                    <li class="trending-item">
+                        <img src="image/nba.jpg" alt="Basketball">
+                        <a href="#">NBA Finals Recap</a>
+                    </li>
+                    <li class="trending-item">
+                        <img src="image/olymic.jpg" alt="Athletics">
+                        <a href="#">Olympic Games Preview</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Article Section -->
+            <div class="col-md-8 article">
+                <h3>Sports Trends 2024</h3>
+                <figure>
+                    <img src="image/trending.jpg" alt="Sports Event">
+                    <figcaption>Exciting Moments from Recent Sports Events</figcaption>
+                </figure>
+                <p>The year 2024 promises to be thrilling for sports fans around the globe, featuring major events and remarkable athletes...</p>
+            </div>
+        </div>
+
+        <!-- Latest Articles Section -->
+        <div class="latest-articles">
+            <h4>Latest Articles</h4>
+            <div class="latest-article">
+                <img src="image/top10.jpg" alt="Article 1">
+                <div>
+                    <h5><a href="#">Top 10 Athletes to Watch in 2024</a></h5>
+                    <p>Get to know the rising stars and seasoned champions making headlines this year...</p>
+                </div>
+            </div>
+            <div class="latest-article">
+                <img src="image/train like pro.jpg" alt="Article 2">
+                <div>
+                    <h5><a href="#">How to Train Like a Pro Athlete</a></h5>
+                    <p>Discover workout routines and nutrition tips from top trainers...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer (Same as Home Page) -->
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

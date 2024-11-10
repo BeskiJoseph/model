@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technology News - News Magazine</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="normalize.css">
+    
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        .article img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+        .article img:hover {
+            transform: scale(1.05);
+        }
+        figure {
+            text-align: center;
+        }
+        .sidebar h4 {
+            margin-bottom: 1rem;
+            color: #17a2b8; /* Teal color for technology theme */
+        }
+        .trending-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            transition: background-color 0.3s;
+        }
+        .trending-item:hover {
+            background-color: #e9ecef;
+            border-radius: 8px;
+            padding: 5px;
+        }
+        .trending-item img {
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+        .latest-articles {
+            margin-top: 2rem;
+        }
+        .latest-articles h4 {
+            margin-bottom: 1rem;
+            color: #17a2b8; /* Teal color for technology theme */
+        }
+        .latest-article {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            transition: transform 0.3s;
+        }
+        .latest-article:hover {
+            transform: translateY(-2px);
+        }
+        .latest-article img {
+            max-width: 100px;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header and Navigation (Assuming it's included from the home page) -->
+
+    <div class="container my-4">
+        <div class="row">
+            <!-- Sidebar (left) -->
+            <div class="col-md-4 sidebar">
+                <h4>Trending Technology:</h4>
+                <ul class="list-unstyled">
+                    <li class="trending-item">
+                        <img src="https://via.placeholder.com/100" alt="Tech 1">
+                        <a href="#">Latest Smartphone Releases</a>
+                    </li>
+                    <li class="trending-item">
+                        <img src="https://via.placeholder.com/100" alt="Tech 2">
+                        <a href="#">Artificial Intelligence Breakthroughs</a>
+                    </li>
+                    <li class="trending-item">
+                        <img src="https://via.placeholder.com/100" alt="Tech 3">
+                        <a href="#">Cybersecurity: Protecting Your Data</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Article Section -->
+            <div class="col-md-8 article">
+                <h3>Technology Trends 2024</h3>
+                <figure>
+                    <img src="https://via.placeholder.com/800x400" alt="Technology Event">
+                    <figcaption>Innovations Shaping the Future of Technology</figcaption>
+                </figure>
+                <p>The year 2024 is set to revolutionize technology with advancements in AI, machine learning, and sustainable tech...</p>
+            </div>
+        </div>
+
+        <!-- Latest Articles Section -->
+        <div class="latest-articles">
+            <h4>Latest Articles</h4>
+            <div class="latest-article">
+                <img src="https://via.placeholder.com/100" alt="Article 1">
+                <div>
+                    <h5><a href="#">Top 5 Gadgets You Can't Live Without</a></h5>
+                    <p>Explore the must-have tech gadgets for your daily life...</p>
+                </div>
+            </div>
+            <div class="latest-article">
+                <img src="https://via.placeholder.com/100" alt="Article 2">
+                <div>
+                    <h5><a href="#">Future of Remote Work: Tools and Technologies</a></h5>
+                    <p>How technology is shaping the way we work from home...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer (Same as Home Page) -->
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
